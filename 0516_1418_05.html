@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 기초_가상클래스 선택자</title>
+    <style>
+        h3, li {color:brown;}
+        .grades {color:blue;}
+        .subject01 {color:green;}
+        .subject02 {color:goldenrod;}
+        #list {background:mistyrose;}
+        div > strong {color:blueviolet;}
+        strong {color:darksalmon;}
+        h3::first-letter {color:aqua;}
+        li:hover {background-color: yellowgreen;}
+        a:link {color:green;}
+        a:visited {color:red;}
+        ul {list-style-type:none;}
+        a {text-decoration: none;}
+    </style>
+    </style>
+</head>
+<body>
+    <div>
+        <h3>미디어콘텐츠 일반</h3>
+        <hr>
+        <div><strong>1학기 학습 내용</strong></div>
+        <ul id="list">
+            <a href="https://www.naver.com/"><li class="subject01">HTML 5</li></a>
+            <a href="https://www.naver.com/"><li class="subject02"><strong>CSS</strong></li></a>
+            <a href="https://www.naver.com/"><li>JavaScript</li></a>
+        </ul>
+        <div class="grade">90점 이상은 A!</div>
+
+    </div>
+</body>
+</html>
