@@ -1,0 +1,52 @@
+<!-- 작성자: 1418 지수민 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력폼_라디오버튼, 체크박스 등</title>
+</head>
+<body>
+    <form>
+        <fieldset>탕수육 취향
+            <label for="">부먹</label>
+            <input type="radio" id="b_eat" name="eat">
+            <label for="">찍먹</label>
+            <input type="radio" id="z_eat" name="eat">
+        </fieldset>
+
+        <legend>좋아하는 아이스크림</legend>
+        <label for="">설레임</label>
+        <input type="checkbox" id="s_ice" name="ice">
+        <label for="">누가바</label>
+        <input type="checkbox" id="n_ice" name="ice">
+        <label for="">밴앤젤리스</label>
+        <input type="checkbox" id="b_ice" name="ice">
+        <label for="">뽕따</label>
+        <input type="checkbox" id="p_ice" name="ice">
+        <label for="">빠삐코</label>
+        <input type="checkbox" id="pa_ice" name="ice">
+    </fieldset>
+    
+        <fieldset>
+            <legend>여름이 좋은 이유</legend>
+            <textarea id="summer_story" name="" cols="52" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>여름 방학에 하고 싶은 일</legend>
+            <select id="summer" name="summer">
+                <option value="lic_summer">자격증 취득</option>
+                <option value="sleep_summer">잠자기</option>
+                <option value="game_summer">게임하기</option>
+                <option value="read_summer" selected>독서하기</option>
+                <option value="tet_summer">테트리스 하기</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <button type="submit">제출하기</button>
+        <button type="reset">리셋하기</button>
+        <button type="button" onclick="alert('여름 방학에 하공 싶은 일 제출')">버튼</button>
+    </form>
+</body>
+</html>
